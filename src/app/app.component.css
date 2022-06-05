@@ -1,0 +1,12 @@
+.root{
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+  }
+  
+th.mat-sort-header-sorted {
+    color: black;
+  }

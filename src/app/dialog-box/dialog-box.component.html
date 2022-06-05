@@ -1,0 +1,21 @@
+
+<div *ngIf="isUpdate">  
+<h2 mat-dialog-title>Update {{word}}</h2>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input placeholder="New Word" matInput [formControl]="dialogListener">
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="doUpdate()">Update</button>
+  <button mat-button (click)="closeDialog()" mat-flat-button color="warn">Cancel</button>
+</div>
+</div>
+<div *ngIf="isDelete">
+    <h2 mat-dialog-title>Delete {{word}}?</h2>
+    <div mat-dialog-actions>
+      <button mat-button (click)="doDelete()">Delete</button>
+      <button mat-button (click)="closeDialog()" mat-flat-button color="warn">Cancel</button>
+    </div>
+    </div>
