@@ -8,7 +8,7 @@ import {Word} from "./word";
 })
 export class DictionaryService {
 
-  private baseUrl = 'http://micronaut-heroku-dict.herokuapp.com/dictionary';
+  private baseUrl = 'https://micronaut-heroku-dict.herokuapp.com/dictionary';
 
   constructor(private http: HttpClient) {
   }
